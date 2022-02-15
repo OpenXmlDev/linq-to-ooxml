@@ -1,0 +1,54 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    // TYPE CHECKING
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    // strictNullChecks must somehow be set explicitly although strict=true 
+    // should imply it.
+    "strictNullChecks": true,
+
+    // MODULES
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "paths": {
+      "@openxmldev/linq-to-ooxml": ["packages/linq-to-ooxml/src/index.ts"]
+    },
+    "rootDir": ".",
+    "typeRoots": ["node_modules/@types"],
+
+    // EMIT
+    "declaration": false,
+    "importHelpers": true,
+    "outDir": "dist",
+    "sourceMap": true,
+
+    // INTEROP CONSTTRAINTS
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // LANGUAGE AND ENVIRONMENT
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es2020", "DOM"],
+    "target": "es2015",
+
+    // OUTPUT FORMATTING
+    "pretty": true,
+
+    // COMPLETETESS
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  },
+  "exclude": ["node_modules", "tmp"]
+}

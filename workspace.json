@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "projects": {
+    "linq-to-ooxml": "packages/linq-to-ooxml"
+  }
+}

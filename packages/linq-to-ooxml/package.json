@@ -1,0 +1,30 @@
+{
+  "name": "@openxmldev/linq-to-ooxml",
+  "version": "0.1.0",
+  "description": "OOXML Namespace-related Classes for LINQ to XML for TypeScript",
+  "keywords": [
+    "LINQ",
+    "XML",
+    "OOXML",
+    "Office Open XML",
+    "LINQ to XML",
+    "XAttribute",
+    "XName",
+    "XNamespace"
+  ],
+  "homepage": "https://github.com/OpenXmlDev/linq-to-ooxml#readme",
+  "bugs": {
+    "url": "https://github.com/OpenXmlDev/linq-to-ooxml/issues"
+  },
+  "license": "MIT",
+  "author": "Thomas Barnekow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenXmlDev/linq-to-ooxml"
+  },
+  "dependencies": {
+    "@openxmldev/linq-to-xml": "^0.9.1",
+    "tslib": "^2.0.0"
+  },
+  "type": "module"
+}

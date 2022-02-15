@@ -1,0 +1,44 @@
+{
+  "root": "packages/linq-to-ooxml",
+  "sourceRoot": "packages/linq-to-ooxml/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/linq-to-ooxml",
+        "main": "packages/linq-to-ooxml/src/index.ts",
+        "tsConfig": "packages/linq-to-ooxml/tsconfig.lib.json",
+        "assets": ["README.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/linq-to-ooxml/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage"],
+      "options": {
+        "jestConfig": "packages/linq-to-ooxml/jest.config.js",
+        "passWithNoTests": true,
+        "codeCoverage": true,
+        "coverageDirectory": "coverage",
+        "coverageReporters": ["text", "lcov", "clover", "cobertura"]
+      }
+    },
+    "publish": {
+      "executor": "@nrwl/workspace:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "npm publish --tag latest --access public",
+        "cwd": "dist/packages/linq-to-ooxml"
+      }
+    }
+  },
+  "tags": []
+}
