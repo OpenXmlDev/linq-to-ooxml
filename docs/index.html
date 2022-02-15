@@ -1,0 +1,93 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@openxmldev/linq-to-ooxml</title><meta name="description" content="Documentation for @openxmldev/linq-to-ooxml"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@openxmldev/linq-to-ooxml</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>@openxmldev/linq-to-ooxml</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#ooxml-namespace-related-classes-for-linq-to-xml-for-typescript" id="ooxml-namespace-related-classes-for-linq-to-xml-for-typescript" style="color: inherit; text-decoration: none;">
+  <h1>OOXML Namespace-Related Classes for LINQ to XML for TypeScript</h1>
+</a>
+<p>Office Open XML (also informally known as OOXML) was initially standardized by the Ecma (as ECMA-376),
+and by the ISO and IEC (as ISO/IEC 29500) in later versions. OOXML consists of:</p>
+<ul>
+<li>a family of XML schemas, which define the XML vocabularies for word-processing, spreadsheet, and
+presentation documents; as well as</li>
+<li>the packaging of documents that conform to these schemas.</li>
+</ul>
+<p>The XML schemas define sets of XML element and attribute names, which are organized in XML namespaces.</p>
+<p>In .NET, the <a href="https://github.com/OfficeDev/Open-XML-SDK">Open XML SDK</a> provides tools for working with
+Office Open XML, including XML namespace-related classes for 
+<a href="https://docs.microsoft.com/en-us/dotnet/standard/linq/linq-xml-overview">LINQ to XML</a>. This repo provides
+TypeScript classes (e.g., <code>W</code>, <code>X</code>, <code>P</code>) for relevant XML namespaces and the XML names contained in such
+namespaces. The namespace-related classes can be used with the <code>@openxmldev/linq-to-xml</code> library, which
+provides an implementation of <a href="https://github.com/OpenXmlDev/linq-to-xml">LINQ to XML in TypeScript</a>.</p>
+
+<a href="#installing" id="installing" style="color: inherit; text-decoration: none;">
+  <h2>Installing</h2>
+</a>
+<p>Run <code>npm install @openxmldev/linq-to-ooxml</code> to install the library.</p>
+
+<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+  <h2>Documentation</h2>
+</a>
+<ul>
+<li><a href="https://openxmldev.github.io/linq-to-ooxml">API documentation</a> (this repo)</li>
+<li><a href="https://openxmldev.github.io/linq-to-xml">LINQ to XML for TypeScript API documentation</a></li>
+</ul>
+
+<a href="#building" id="building" style="color: inherit; text-decoration: none;">
+  <h2>Building</h2>
+</a>
+<p>Run <code>nx build linq-to-ooxml</code> to build the library.</p>
+
+<a href="#running-unit-tests" id="running-unit-tests" style="color: inherit; text-decoration: none;">
+  <h2>Running Unit Tests</h2>
+</a>
+<p>Run <code>nx test linq-to-ooxml</code> to execute the unit tests via <a href="https://jestjs.io">Jest</a>.</p>
+
+<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+  <h2>Examples</h2>
+</a>
+<p>In short words, usage is identical to .NET. Have a look at the
+<a href="https://openxmldev.github.io/linq-to-ooxml">API documentation</a> to see what is on offer.</p>
+
+<a href="#importing" id="importing" style="color: inherit; text-decoration: none;">
+  <h3>Importing</h3>
+</a>
+<p>Simply import the namespace-related classes from <code>@openxmldev/linq-to-ooxml</code>. For example:</p>
+<pre><code class="language-typescript"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">W</span><span class="hl-1">, </span><span class="hl-2">W14</span><span class="hl-1">, </span><span class="hl-2">WP</span><span class="hl-1">, </span><span class="hl-2">WPC</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;@openxmldev/linq-to-ooxml&#39;</span><span class="hl-1">;</span>
+</code></pre>
+<p>All class names are the uppercase versions (e.g., <code>W</code>, <code>W14</code>, <code>WP</code>, <code>WPC</code>) of the namespace prefixes
+(e.g., <code>w</code>, <code>w14</code>, <code>wp</code>, <code>wpc</code>).</p>
+
+<a href="#properties-provided-by-the-namespace-related-classes" id="properties-provided-by-the-namespace-related-classes" style="color: inherit; text-decoration: none;">
+  <h3>Properties Provided by the Namespace-related Classes</h3>
+</a>
+<p>The following code snippet explains the anatomy of the namespace-related classes, using an excerpt
+of the <code>W</code> class. Firstly, with the exception of the <code>NoNamespace</code> class, each class declares exactly
+one property of type <code>XNamespace</code>, using the namespace prefix as the name of such property. In this
+case, the prefix is <code>w</code>, so the property is called <code>w</code> as well. Second, each class defines a getter
+called <code>namespaceDeclaration</code>, which returns an <code>XAttribute</code> representing an XML namespace declaration
+such as <code>xmlns:w=&quot;http://schemas.openxmlformats.org/wordprocessingml/2006/main&quot;</code>. Again, the 
+<code>NoNamespace</code> class is the exception because it does not represent a namespace but rather defines all
+names that do <em>not</em> have a namespace.</p>
+<pre><code class="language-typescript"><span class="hl-4">class</span><span class="hl-1"> </span><span class="hl-5">W</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">readonly</span><span class="hl-1"> </span><span class="hl-2">w</span><span class="hl-1">: </span><span class="hl-5">XNamespace</span><span class="hl-1"> = </span><span class="hl-2">XNamespace</span><span class="hl-1">.</span><span class="hl-6">get</span><span class="hl-1">(</span><br/><span class="hl-1">    </span><span class="hl-3">&#39;http://schemas.openxmlformats.org/wordprocessingml/2006/main&#39;</span><br/><span class="hl-1">  );</span><br/><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">get</span><span class="hl-1"> </span><span class="hl-6">namespaceDeclaration</span><span class="hl-1">(): </span><span class="hl-5">XAttribute</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-0">return</span><span class="hl-1"> </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">XAttribute</span><span class="hl-1">(</span><span class="hl-2">XNamespace</span><span class="hl-1">.</span><span class="hl-2">xmlns</span><span class="hl-1">.</span><span class="hl-6">getName</span><span class="hl-1">(</span><span class="hl-3">&#39;w&#39;</span><span class="hl-1">), </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">w</span><span class="hl-1">.</span><span class="hl-2">namespaceName</span><span class="hl-1">);</span><br/><span class="hl-1">  }</span><br/><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">readonly</span><span class="hl-1"> </span><span class="hl-2">document</span><span class="hl-1">: </span><span class="hl-5">XName</span><span class="hl-1"> = </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">w</span><span class="hl-1">.</span><span class="hl-6">getName</span><span class="hl-1">(</span><span class="hl-3">&#39;document&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">readonly</span><span class="hl-1"> </span><span class="hl-2">body</span><span class="hl-1">: </span><span class="hl-5">XName</span><span class="hl-1"> = </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">w</span><span class="hl-1">.</span><span class="hl-6">getName</span><span class="hl-1">(</span><span class="hl-3">&#39;body&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">readonly</span><span class="hl-1"> </span><span class="hl-2">p</span><span class="hl-1">: </span><span class="hl-5">XName</span><span class="hl-1"> = </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">w</span><span class="hl-1">.</span><span class="hl-6">getName</span><span class="hl-1">(</span><span class="hl-3">&#39;p&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">readonly</span><span class="hl-1"> </span><span class="hl-2">r</span><span class="hl-1">: </span><span class="hl-5">XName</span><span class="hl-1"> = </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">w</span><span class="hl-1">.</span><span class="hl-6">getName</span><span class="hl-1">(</span><span class="hl-3">&#39;r&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">  </span><span class="hl-4">public</span><span class="hl-1"> </span><span class="hl-4">static</span><span class="hl-1"> </span><span class="hl-4">readonly</span><span class="hl-1"> </span><span class="hl-2">t</span><span class="hl-1">: </span><span class="hl-5">XName</span><span class="hl-1"> = </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">w</span><span class="hl-1">.</span><span class="hl-6">getName</span><span class="hl-1">(</span><span class="hl-3">&#39;t&#39;</span><span class="hl-1">);</span><br/><span class="hl-1">}</span>
+</code></pre>
+<p>Third, each class defines properties for all names (e.g., <code>w:document</code>, <code>w:body</code>, <code>w:p</code>) defined in
+the namespace (or having no namespace in the case of the <code>NoNamespace</code> class).</p>
+
+<a href="#using-the-namespace-related-classes" id="using-the-namespace-related-classes" style="color: inherit; text-decoration: none;">
+  <h3>Using the Namespace-related Classes</h3>
+</a>
+<p>Using the names in conjunction with the classes provided by the <code>@openxmldev/linq-to-xml</code> package,
+you could create a super-simple &quot;Hello World!&quot; document as follows:</p>
+<pre><code class="language-typescript"><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-7">document</span><span class="hl-1"> =</span><br/><span class="hl-1">  </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">XElement</span><span class="hl-1">(</span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">document</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">namespaceDeclaration</span><span class="hl-1">,</span><br/><span class="hl-1">    </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">XElement</span><span class="hl-1">(</span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">body</span><span class="hl-1">,</span><br/><span class="hl-1">      </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">XElement</span><span class="hl-1">(</span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">p</span><span class="hl-1">,</span><br/><span class="hl-1">        </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">XElement</span><span class="hl-1">(</span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">r</span><span class="hl-1">,</span><br/><span class="hl-1">          </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">XElement</span><span class="hl-1">(</span><span class="hl-7">W</span><span class="hl-1">.</span><span class="hl-2">t</span><span class="hl-1">, </span><span class="hl-3">&#39;Hello World!&#39;</span><span class="hl-1">)))));</span>
+</code></pre>
+
+<a href="#language-specific-differences" id="language-specific-differences" style="color: inherit; text-decoration: none;">
+  <h2>Language-specific Differences</h2>
+</a>
+<p>The reserved keywords in C# and TypeScript are different, meaning that there are some minor
+differences in the naming of the static properties in C# vs. TypeScript.</p>
+<p>In C#, the <code>@</code> character is prepended where a property name is a reserved keyword. In case the
+property name does not collide with a reserved keyword in TypeScript, the property name is used
+as-is.</p>
+<p>In TypeScript, collisions with reserved keywords or names are resolved by appending underscores
+to property names. For example, <code>name</code> and <code>length</code> are reserved names in TypeScript, meaning
+an underscore will be appended in those two cases.</p>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-class"><a href="classes/A.html" class="tsd-kind-icon">A</a></li><li class="tsd-kind-class"><a href="classes/A14.html" class="tsd-kind-icon">A14</a></li><li class="tsd-kind-class"><a href="classes/A15.html" class="tsd-kind-icon">A15</a></li><li class="tsd-kind-class"><a href="classes/A16.html" class="tsd-kind-icon">A16</a></li><li class="tsd-kind-class"><a href="classes/CP.html" class="tsd-kind-icon">CP</a></li><li class="tsd-kind-class"><a href="classes/DC.html" class="tsd-kind-icon">DC</a></li><li class="tsd-kind-class"><a href="classes/DCTERMS.html" class="tsd-kind-icon">DCTERMS</a></li><li class="tsd-kind-class"><a href="classes/DS.html" class="tsd-kind-icon">DS</a></li><li class="tsd-kind-class"><a href="classes/M.html" class="tsd-kind-icon">M</a></li><li class="tsd-kind-class"><a href="classes/NoNamespace.html" class="tsd-kind-icon">No<wbr/>Namespace</a></li><li class="tsd-kind-class"><a href="classes/O.html" class="tsd-kind-icon">O</a></li><li class="tsd-kind-class"><a href="classes/P.html" class="tsd-kind-icon">P</a></li><li class="tsd-kind-class"><a href="classes/P14.html" class="tsd-kind-icon">P14</a></li><li class="tsd-kind-class"><a href="classes/P15.html" class="tsd-kind-icon">P15</a></li><li class="tsd-kind-class"><a href="classes/R.html" class="tsd-kind-icon">R</a></li><li class="tsd-kind-class"><a href="classes/SL.html" class="tsd-kind-icon">SL</a></li><li class="tsd-kind-class"><a href="classes/V.html" class="tsd-kind-icon">V</a></li><li class="tsd-kind-class"><a href="classes/W.html" class="tsd-kind-icon">W</a></li><li class="tsd-kind-class"><a href="classes/W10.html" class="tsd-kind-icon">W10</a></li><li class="tsd-kind-class"><a href="classes/W14.html" class="tsd-kind-icon">W14</a></li><li class="tsd-kind-class"><a href="classes/W15.html" class="tsd-kind-icon">W15</a></li><li class="tsd-kind-class"><a href="classes/WP.html" class="tsd-kind-icon">WP</a></li><li class="tsd-kind-class"><a href="classes/WPC.html" class="tsd-kind-icon">WPC</a></li><li class="tsd-kind-class"><a href="classes/WPG.html" class="tsd-kind-icon">WPG</a></li><li class="tsd-kind-class"><a href="classes/WPS.html" class="tsd-kind-icon">WPS</a></li><li class="tsd-kind-class"><a href="classes/X.html" class="tsd-kind-icon">X</a></li><li class="tsd-kind-class"><a href="classes/X14.html" class="tsd-kind-icon">X14</a></li><li class="tsd-kind-class"><a href="classes/X15.html" class="tsd-kind-icon">X15</a></li><li class="tsd-kind-class"><a href="classes/XML.html" class="tsd-kind-icon">XML</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
