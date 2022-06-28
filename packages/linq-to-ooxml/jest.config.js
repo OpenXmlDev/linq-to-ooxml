@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Define a list of ESM modules that need to be transformed.
 const esmModuleList = ['@openxmldev/linq-to-xml', '@tsdotnet/linq'];
 
@@ -11,7 +12,7 @@ export default {
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json'
+      tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
 
@@ -20,13 +21,13 @@ export default {
   // correctly dealing with ESM modules. Without this, the tests will fail.
   transform: {
     '^.+\\.ts$': 'ts-jest',
-    '^.+\\.js$': 'babel-jest'
+    '^.+\\.js$': 'babel-jest',
   },
-  
+
   // The transformIgnorePatterns option is required for having the ESM modules
   // transformed. If not defined, tests will fail.
   transformIgnorePatterns: [esmModulePattern],
-  
+
   // Previously, this included 'html'. However, we don't have HTML files, so this
   // was removed.
   moduleFileExtensions: ['ts', 'js'],

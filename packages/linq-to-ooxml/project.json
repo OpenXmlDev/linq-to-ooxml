@@ -1,5 +1,5 @@
 {
-  "root": "packages/linq-to-ooxml",
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "sourceRoot": "packages/linq-to-ooxml/src",
   "projectType": "library",
   "targets": {
