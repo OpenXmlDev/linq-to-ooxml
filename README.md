@@ -1,5 +1,8 @@
 # OOXML Namespace-Related Classes for LINQ to XML for TypeScript
 
+[![codecov](https://codecov.io/gh/OpenXmlDev/linq-to-ooxml/branch/main/graph/badge.svg?token=h9gnmxhU0z)](https://codecov.io/gh/OpenXmlDev/linq-to-ooxml)
+[![npm version](https://badge.fury.io/js/@openxmldev%2Flinq-to-ooxml.svg)](https://www.npmjs.com/package/@openxmldev/linq-to-ooxml)
+
 Office Open XML (also informally known as OOXML) was initially standardized by the Ecma (as ECMA-376),
 and by the ISO and IEC (as ISO/IEC 29500) in later versions. OOXML consists of:
 
