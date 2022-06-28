@@ -1,6 +1,6 @@
 {
   "name": "@openxmldev/linq-to-ooxml",
-  "version": "0.1.0",
+  "version": "0.9.1",
   "description": "OOXML Namespace-related Classes for LINQ to XML for TypeScript",
   "keywords": [
     "LINQ",

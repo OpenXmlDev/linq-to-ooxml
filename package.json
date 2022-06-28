@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "build": "nx run linq-to-ooxml:build",
+    "test": "nx run linq-to-ooxml:test",
     "document": "typedoc --out ./docs --tsconfig ./packages/linq-to-ooxml/tsconfig.lib.json ./packages/linq-to-ooxml/src"
   },
   "private": true,
