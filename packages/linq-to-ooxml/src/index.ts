@@ -3,8 +3,10 @@
  * @license MIT
  */
 
-export * from './generated';
+export * from './generated/index.js';
 
-export { CP } from './CP';
-export { DC } from './DC';
-export { DCTERMS } from './DCTERMS';
+export { CP } from './CP.js';
+export { DC } from './DC.js';
+export { DCTERMS } from './DCTERMS.js';
+export { PKG } from './PKG.js';
+export { Relationships } from './Relationships.js';

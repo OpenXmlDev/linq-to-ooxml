@@ -10,10 +10,18 @@ const esmModulePattern = `/node_modules/(?!(${esmModuleList.join('|')}))`;
 export default {
   displayName: 'linq-to-ooxml',
   preset: '../../jest.preset.js',
+
+  extensionsToTreatAsEsm: ['.ts'],
+  
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
+      useESM: true,
     },
+  },
+
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
   },
 
   // The transform option differentiates between .ts and .js files, transforming

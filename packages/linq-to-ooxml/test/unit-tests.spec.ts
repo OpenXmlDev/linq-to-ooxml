@@ -35,7 +35,9 @@ import {
   CP,
   DC,
   DCTERMS,
-} from '../src';
+  PKG,
+  Relationships,
+} from '../src/index.js';
 
 /**
  * Represents a property bag, which allows us to access the static properties of
@@ -76,6 +78,8 @@ const propertyBags: PropertyBag[] = [
   CP,
   DC,
   DCTERMS,
+  PKG,
+  Relationships,
 ];
 
 describe('Each namespace-related class', () => {
@@ -104,8 +108,17 @@ describe('Each namespace-related class', () => {
 
       expect(namespaceDeclaration).toBeInstanceOf(XAttribute);
       expect(namespaceDeclaration.isNamespaceDeclaration).toBe(true);
-      expect(namespaceDeclaration.name.namespace).toBe(XNamespace.xmlns);
-      expect(namespaceDeclaration.name.localName).toEqual(namespacePrefix);
+
+      // namespaceDeclaration can be in the following forms:
+      // - xmlns:prefix="..."
+      // - xmlns="..."
+      expect([XNamespace.xmlns, XNamespace.none]).toContain(
+        namespaceDeclaration.name.namespace
+      );
+      expect([namespacePrefix, 'xmlns']).toContain(
+        namespaceDeclaration.name.localName
+      );
+
       expect(namespaceDeclaration.value).toEqual(namespace.namespaceName);
     }
   });
@@ -140,7 +153,7 @@ describe('Each namespace-related class', () => {
         // We are looking at XName instances with the right namespace and
         // well-formed local names.
         expect(name).toBeInstanceOf(XName);
-        expect(name.namespace).toBe(namespace);
+        expect([namespace, XNamespace.none]).toContain(name.namespace);
         expect(name.localName).toMatch(/^[a-zA-Z][a-zA-Z0-9]*$/);
 
         // Property names are generally equal to the local name but may have

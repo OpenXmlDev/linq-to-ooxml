@@ -1,6 +1,6 @@
 {
   "name": "@openxmldev/linq-to-ooxml",
-  "version": "0.9.2",
+  "version": "0.10.0",
   "description": "OOXML Namespace-related Classes for LINQ to XML for TypeScript",
   "keywords": [
     "LINQ",
@@ -23,7 +23,7 @@
     "url": "https://github.com/OpenXmlDev/linq-to-ooxml"
   },
   "dependencies": {
-    "@openxmldev/linq-to-xml": "^0.9.1",
+    "@openxmldev/linq-to-xml": "^0.10.0",
     "tslib": "^2.0.0"
   },
   "type": "module"
